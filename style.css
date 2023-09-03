@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: rgb(229, 22, 22);
+}
+
+/*style header*/
+.header {
+  width: 100vw;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.header-nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-menu {
+  fill: white; /* Color blanco */
+  width: 32px; /* Tamaño deseado en píxeles */
+  height: 32px; /* Tamaño deseado en píxeles */
+}
+
+.list-nav {
+  display: none;
+}
+.icon-header {
+  width: 40px;
+  height: 40px;
+  margin-left: 30px;
+}
+.icon-menu {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 4rem;
+}
+
+.logo-header {
+  color: white;
+  font-size: 3.5rem;
+  padding-right: 30px;
+  font-weight: 900;
+}
+
+/*style main
+style section logo y reserva */
+.main {
+  width: 100vw;
+  height: auto;
+}
+.section-logoReserva {
+  width: 100%;
+  height: 150vh;
+  background: url(./img/bar-g52dbbea95_1920.jpg) center/cover no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-logoReserva {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.65);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.name-bar {
+  width: 90%;
+  height: 300px;
+  color: rgb(212, 139, 141);
+  text-align: center;
+
+  font-size: 11.4rem;
+  font-weight: 800;
+}
+.name-bar span {
+  color: white;
+  font-size: 10.4rem;
+}
+.btn-reserva {
+  margin-top: 70px;
+  width: 250px;
+  height: 60px;
+  background: black;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 900;
+  border: 2px solid rgb(160, 160, 160);
+  cursor: pointer;
+}
+
+/*section productos*/
+.section-productos {
+  width: 100vw;
+  height: auto;
+}
+
+.container-informationproduc,
+.container-reservas {
+  width: 100%;
+  height: 600px;
+}
+.slogan-productos,
+.container-bebida {
+  width: 100%;
+  height: 50%;
+}
+.slogan-productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.slogan-productos p {
+  color: white;
+  font-weight: 800;
+  padding-left: 30px;
+}
+
+.slogan-productos :nth-child(1) {
+  font-size: 3rem;
+}
+.slogan-productos :nth-child(2) {
+  font-size: 4rem;
+}
+.slogan-productos :nth-child(3) {
+  font-size: 5rem;
+}
+
+/*style coctel*/
+.figure-coctel {
+  width: 100%;
+  height: 100%;
+}
+.figure-coctel img {
+  width: 390px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/*container reservas*/
+.container-figureReserva,
+.container-reservaVirtual {
+  width: 100%;
+  height: 50%;
+}
+.container-reservaVirtual{
+    display: flex;
+    flex-direction: column;
+}
+.figure-reserva {
+  width: 100%;
+  height: 100%;
+}
+.figure-reserva img {
+  width: 390px;
+  height: 300px;
+  object-fit: cover;
+}
+.informacion-reserva {
+  width: 90%;
+  margin: 20px auto 0 auto;
+  font-size: 3.6rem;
+  text-align: center;
+  font-weight: 800;
+  color: white;
+}
+.parrafo-reserva {
+
+  font-size: 2rem;
+  color: white;
+  width: 90%;
+  margin: 20px auto 0 auto;
+}
+.btn-reservaVirtual{
+   
+    width: 250px;
+    height: 60px;
+    background: rgb(236, 218, 24);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 900;
+    cursor: pointer;
+    margin: 20px auto 0 auto;
+    border: none;
+}
+
+/*style formulario*/
+.formulario{
+    width: 100vw;
+    height: auto;
+    margin-top: 30px;
+}

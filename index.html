@@ -4,10 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BAR-FIS</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
+
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header class="header">
+        <nav class="header-nav">
+           <a href="" class="icon-header"><i class="fas fa-bars icon-menu"></i></a> 
+            <ul class="list-nav">
+                <li><a href="">inicio</a></li>
+                <li><a href="">nosotros</a></li>
+                <li><a href="">productos</a></li>
+                <li><a href="">contacto</a></li>
+            </ul>
+            <div class="logo-header">
+                LOGO
+            </div>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main class="main">
+
+        <!-- section logo y reserva -->
+        <section class="section-logoReserva">
+            <div class="container-logoReserva">
+            <h1 class="name-bar">B<span>A</span>R F<span>I</span>S</h1>
+            <button class="btn-reserva"> RESERVA TU LUGAR</button>
+            </div>
+        </section>
+
+        <!-- seccion informacion productos -->
+
+         <section class="section-productos">
+            <div class="container-informationproduc">
+                <div class="slogan-productos">
+                    <p>LOS</p>
+                    <p>MEJORES</p>
+                    <p>TRAGOS AQUI</p>
+                </div>
+                <div class="container-bebida">
+                    <figure class="figure-coctel">
+                        <img src="./img/coctel-removebg-preview.png" alt="una copa con coctel">
+                    </figure>
+                </div>
+            </div>
+            <div class="container-reservas">
+                <div class="container-figureReserva">
+                    <figure class="figure-reserva">
+                        <img src="./img/bar-gd08b95f42_1920.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="container-reservaVirtual">
+                    <h3 class="informacion-reserva">AHORA RESERVA VIRTUALMENTE</h3>
+                    <p class="parrafo-reserva">lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor in.</p>
+                    <button class="btn-reservaVirtual">RESERVAR</button>
+                </div>
+            </div>
+         </section> 
+         
+         <!-- SECTION FORMULARIO -->
+         <section class="formulario">
+                <h1 class="title-contactanos">CONTACTANOS</h1>
+            <div class="container-form">
+                <form action="" class="formulario">
+                    <label for="nombre">
+                        <input type="text" id="nombre" class="input-name" placeholder="NOMBRES">
+                    </label>
+                    <label for="asunto">
+                        <input type="text" id="asunto" class="input-asunto" placeholder="ASUNTO">
+                    </label>
+                    <label for="mensaje">
+                        <textarea name="" id="mensaje" cols="45" rows="10" class="input-mensaje"></textarea>
+                    </label>
+                    <label for="telefono">
+                        <input type="text" id="telefono" class="input-telefono" placeholder="TELÉFONO">
+                    </label>
+                    <label for="email">
+                        <input type="text" id="email" class="input-gmail" placeholder="EMAIL">
+                    </label>
+                    <input type="submit">
+                </form>
+            </div>
+         </section>
+    </main>
+    <footer>
+        <h1>LOGO</h1>
+        <p>Todos los derechos reservados <span>Angel Gabriel</span> 2023</p>
+    </footer>
 </body>
 </html>
