@@ -120,8 +120,9 @@ style section logo y reserva */
 }
 .slogan-productos,
 .container-bebida {
-  width: 100vw;
+  width: 100%;
   height: 50%;
+  margin: 0 auto;
 }
 .slogan-productos {
   display: flex;
@@ -239,7 +240,7 @@ style section logo y reserva */
 }
 .label-mensaje{
   width: 100%;
-  
+
 }
 .formulario input,textarea {
   background: rgb(218, 217, 217);
@@ -291,8 +292,4 @@ height: 100%;
 }
 .autor-footer span{
   color: rgb(123, 123, 236);
-}
-
-@media(min-width:640px){
-
 }
