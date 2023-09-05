@@ -37,7 +37,22 @@ body {
 }
 
 .list-nav {
-  display: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 75%;
+  height: 40px;
+}
+
+.list-nav li a {
+  color: rgb(206, 206, 206);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 900;
+}
+.list-nav li a:hover{
+  color: rgb(32, 246, 8);
 }
 .icon-header {
   width: 40px;
@@ -124,6 +139,11 @@ style section logo y reserva */
   height: 50%;
   margin: 0 auto;
 }
+.container-bebida{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .slogan-productos {
   display: flex;
   flex-direction: column;
@@ -150,11 +170,15 @@ style section logo y reserva */
   width: 80vw;
   height: 280px;
   margin: 0 auto;
+  display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .figure-coctel img {
   width: 312px;
   height: 280px;
   object-fit: cover;
+  
 }
 
 /*container reservas*/
@@ -163,9 +187,9 @@ style section logo y reserva */
   width: 100vw;
   height: 50%;
 }
-.container-reservaVirtual{
-    display: flex;
-    flex-direction: column;
+.container-reservaVirtual {
+  display: flex;
+  flex-direction: column;
 }
 .figure-reserva {
   width: 80vw;
@@ -186,43 +210,41 @@ style section logo y reserva */
   color: white;
 }
 .parrafo-reserva {
-
+  text-align: center;
   font-size: 2rem;
   color: white;
   width: 90%;
   margin: 20px auto 0 auto;
 }
-.btn-reservaVirtual{
-   
-    width: 250px;
-    height: 60px;
-    background: rgb(236, 218, 24);
-    color: white;
-    font-size: 2.5rem;
-    font-weight: 900;
-    cursor: pointer;
-    margin: 20px auto 0 auto;
-    border: none;
+.btn-reservaVirtual {
+  width: 250px;
+  height: 60px;
+  background: rgb(236, 218, 24);
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 900;
+  cursor: pointer;
+  margin: 20px auto 0 auto;
+  border: none;
 }
 
 /*style formulario*/
-.formulario{
-    width: 100vw;
-    height: auto;
+.formulario {
+  width: 100vw;
+  height: auto;
 }
-.title-contactanos{
+.title-contactanos {
   font-size: 3.5rem;
   text-align: center;
   color: white;
   font-weight: 900;
   margin: 0 auto;
 }
-.container-form{
+.container-form {
   width: 85vw;
-  margin: 20px auto 0 auto ;
-  
+  margin: 20px auto 0 auto;
 }
-.formulario{
+.formulario {
   width: 85vw;
   display: flex;
   flex-wrap: wrap;
@@ -234,15 +256,16 @@ style section logo y reserva */
 }
 .label-nombre,
 .label-email,
-.label-asunto,.label-telefono {
+.label-asunto,
+.label-telefono {
   width: 100%;
   height: 35px;
 }
-.label-mensaje{
+.label-mensaje {
   width: 100%;
-
 }
-.formulario input,textarea {
+.formulario input,
+textarea {
   background: rgb(218, 217, 217);
   color: rgb(113, 113, 113);
   border: none;
@@ -250,23 +273,25 @@ style section logo y reserva */
   font-size: 1.5rem;
   font-weight: 700;
 }
-.input-name,.input-asunto,
-.input-telefono,.input-gmail,.input-mensaje{
-width: 100%;
-height: 100%;
+.input-name,
+.input-asunto,
+.input-telefono,
+.input-gmail,
+.input-mensaje {
+  width: 100%;
+  height: 100%;
 }
-.input-mensaje{
+.input-mensaje {
   font-family: Arial, Helvetica, sans-serif;
   padding-top: 10px;
 }
 
-.submit-form{
+.submit-form {
   margin-top: 10px;
   width: 100%;
   height: 35px;
-
 }
-.footer{
+.footer {
   margin-top: 30px;
   background: black;
   width: 100vw;
@@ -275,14 +300,14 @@ height: 100%;
   justify-content: space-between;
   align-items: center;
 }
-.logo-footer{
+.logo-footer {
   width: 45%;
   color: white;
   font-size: 4rem;
   font-weight: 900;
   padding-left: 50px;
 }
-.autor-footer{
+.autor-footer {
   width: 45%;
   height: 50px;
   color: white;
@@ -290,6 +315,110 @@ height: 100%;
   padding-right: 5px;
   text-align: center;
 }
-.autor-footer span{
+.autor-footer span {
   color: rgb(123, 123, 236);
+}
+
+@media (max-width: 639px) {
+  .list-nav {
+    display: none;
+  }
+}
+
+@media (min-width: 640px) {
+  .icon-header {
+    display: none;
+  }
+  .container-informationproduc{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 300px;
+  }
+  .slogan-productos, .container-bebida{
+    width: 50%;
+    height: 300px;
+  }
+  .figure-coctel{
+    width: 100%;
+  }
+}
+
+@media (min-width: 800px) {
+  .list-nav{
+    width: 60%;
+  }
+  .container-reservas{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 300px;
+  }
+  .container-figureReserva, .container-reservaVirtual{
+    width: 50%;
+    height: 300px;
+  }
+  .figure-reserva{
+    width: 100%;
+  }
+  .formulario{
+    margin: 30px auto;
+  }
+  .title-contactanos{
+    font-size: 6rem;
+  }
+  .autor-footer{
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+  }
+  .autor-footer span{
+    padding: 0 5px;
+  }
+}
+
+
+
+@media(min-width:1024px){
+
+  .container-informationproduc{
+    height: 400px;
+  }
+  .slogan-productos{
+    width: 55%;
+    height: 100%;
+  }
+  .container-bebida{
+    width: 45%;
+    height: 100%;
+  }
+  .figure-coctel{
+    width: 100%;
+    height: 100%;
+  }
+  .figure-coctel img{
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .container-reservas{
+    height: 600px;
+  }
+  .container-figureReserva{
+    width: 55%;
+    height:100%;
+  }
+  .container-reservaVirtual{
+    width: 45%;
+    height:100%;
+  }
+  .informacion-reserva{
+    font-size: 4.5rem;
+  }
+  .parrafo-reserva{
+    width: 75%;
+    font-size: 3rem;
+    font-weight: 900;
+  }
 }
